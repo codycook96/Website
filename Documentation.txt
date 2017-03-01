@@ -1,0 +1,58 @@
+Author:   Cody Cook
+Date:     3/1/2017
+Purpose:  To create a personal website to both gain html, css, and javascript experience 
+          as well as have a platform to display my personal projects and achievements.
+         
+Inspiration:  I have always had an interest in web design, as far back as middle school 
+              using google.com/sites/ to make websites (essentially copy-pasted template
+              ones though). I was never satisfied with the restrictive nature of premade
+              templates and long domains associated with google sites or wordpress or
+              the like. So I finally decided to build a proper website, domain, hosting,
+              html, css, js, and all. Bellow I will detail the steps I took along with 
+              the sources I used to help me build this site from scratch.
+              
+Hosting:      In the interest of keeping costs down and having a github account, I
+              discovered github could act as a server for hosting a webste with its
+              build in "Github Pages" functionality. I followed the general set up
+              guide listed here: https://pages.github.com/
+              
+              1) I created a new repository for the site. I named mine "website".
+              
+              2) I made a new html file "index.html" in the master repository and with
+                 my basic knowledge of html made a simple "hello world" html page.
+                 
+              3) Then as per github pages, I made a branch named "gh-pages" from the 
+                 master branch.
+                 
+              4) Then after committing changes I could see the website from live at
+                 https://codycook96.github.io/ (no longer active because of the new
+                 domain).
+                 
+Domain:       I wanted the website to stand out and appear more professional, so I opted
+              to purchase a domain. 
+              
+              1) I bought the domain "codycook.info" from https://www.namecheap.com/ 
+                 using their basic DNS Package.
+                 
+              2) Then in my repository (gh-pages branch) I created a file named CNAME
+                 (no extension) that would redirect trafic from the Github servers to my 
+                 site. It simply contained my domain "codycook.info"
+                 
+              3) To send that traffic to Github, I went to namecheap.com, and added two
+                 DNS records ("A + Dynamic DNS Record") that were valued at the IP for 
+                 Github's servers: "192.30.252.153" and "192.30.252.153".
+                 
+              4) After a certain amount of time (which could be adjusted under the "TTL" 
+                 value on namecheap.com) the domain would now direct to my page hosted
+                 on the Github server.
+                 
+Bootstrap     After two minutes of looking around, I discovered the bootstrap framework
+              for html, css, and js was all but crucial to make a decent looking, light-
+              weight website. So I downloaded it into my repository.
+              
+              1) From the bootstrap website, https://getbootstrap.com/getting-started/,
+                 selected "Download Bootstrap", extracted the files, and uploaded them to
+                 the repository.
+                 
+                 
+                 
